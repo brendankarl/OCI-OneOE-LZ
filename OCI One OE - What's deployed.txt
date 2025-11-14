@@ -1,0 +1,21 @@
+OCI One OE - What's deployed
+----------------------------
+Governance
+-Tag Namespace
+
+IAM
+-Compartments
+-Groups
+-Policies
+
+Observability 
+-Alarms
+-Events
+-Notifications
+-Service Connector
+
+Security
+--------
+-Cloud Guard
+-Scanning
+-Security Zones (only applies CIS Level 1)
