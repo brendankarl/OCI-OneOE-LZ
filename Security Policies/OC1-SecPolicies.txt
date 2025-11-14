@@ -1,0 +1,1616 @@
+{
+  "data": {
+    "defined-tags": null,
+    "freeform-tags": null,
+    "items": [
+      {
+        "category": "Use Only Configurations Approved by Oracle",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You must create a compute instance in a security zone using a platform image. You can't create a compute instance in a security zone from a custom image.",
+        "display-name": "deny instance_without_sanctioned_image",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny instance_without_sanctioned_image",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaadhzmdbzaemersmvdahgtc5dbc4bf7l2rlsi6aaqwgq5ywokt4nrq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE",
+          "COMPUTEMANAGEMENT"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.161000+00:00",
+        "time-updated": "2025-11-13T03:21:24.165000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't add a compute instance in a security zone to a subnet if the subnet isn't in the same security zone.",
+        "display-name": "deny instance_in_security_zone_in_subnet_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny instance_in_security_zone_in_subnet_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaodtmgz53fekqtbnxrgzf32p4obyph2qka3szvzd433isc34y3w4a",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE",
+          "COMPUTEMANAGEMENT"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.213000+00:00",
+        "time-updated": "2025-11-13T03:21:24.215000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't attach a block storage volume in a security zone to a compute instance that isn't in the same security zone.",
+        "display-name": "deny block_volume_in_security_zone_attach_to_instance_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny block_volume_in_security_zone_attach_to_instance_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaf45c2imtiuyxbccuwrh3s7is5lokpx5ksr4heu46c6mz6k35dsqa",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.275000+00:00",
+        "time-updated": "2025-11-13T03:21:24.276000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't attach a block storage volume to a compute instance in a security zone if the volume isn't in the same security zone.",
+        "display-name": "deny block_volume_not_in_security_zone_attach_to_instance_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny block_volume_not_in_security_zone_attach_to_instance_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa5qtljtbaeacnhfhr7hfs5nd3jp6jin6grbdgf6izkf4ukxmatjpa",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.324000+00:00",
+        "time-updated": "2025-11-13T03:21:24.325000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't attach a boot volume in a security zone to a compute instance that isn't in the same security zone.",
+        "display-name": "deny boot_volume_in_security_zone_attach_to_instance_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny boot_volume_in_security_zone_attach_to_instance_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa6oycc62uuvpi6oddkzku6x2vzhraud7ynkbdeols5i4khwroklva",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.372000+00:00",
+        "time-updated": "2025-11-13T03:21:24.373000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't attach a boot volume to a compute instance in a security zone if the volume isn't in the same security zone.",
+        "display-name": "deny boot_volume_not_in_security_zone_attach_to_instance_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny boot_volume_not_in_security_zone_attach_to_instance_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaauvfkentmqda6mq7lxekkstjpe7kwgmrpkadzt7krhrt66tliourq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.421000+00:00",
+        "time-updated": "2025-11-13T03:21:24.423000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't launch a compute instance in a security zone if its boot volume isn't in the same security zone.",
+        "display-name": "deny instance_in_security_zone_launch_from_boot_volume_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny instance_in_security_zone_launch_from_boot_volume_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa544n6cyqrq6tato53ohh7vcz523af5dtuz6x54efhs6mb7bcw54a",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE",
+          "COMPUTEMANAGEMENT"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.472000+00:00",
+        "time-updated": "2025-11-13T03:21:24.473000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't launch a compute instance using a boot volume in a security zone if the instance isn't in the same security zone.",
+        "display-name": "deny instance_not_in_security_zone_launch_from_boot_volume_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny instance_not_in_security_zone_launch_from_boot_volume_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaay32fadjsdgsytdpyn4busugqftko2shttseljqbagapngiatxepa",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE",
+          "COMPUTEMANAGEMENT"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.521000+00:00",
+        "time-updated": "2025-11-13T03:21:24.522000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a compute instance in a security zone to a compartment that is not in the same security zone.",
+        "display-name": "deny instance_in_security_zone_move_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny instance_in_security_zone_move_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa2lfkaypfwyykhbz65zlgc4lvypl64axzhnsqmegllgiyxbweruya",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.573000+00:00",
+        "time-updated": "2025-11-13T03:21:24.574000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a compute instance to a security zone from a compartment that is not in the same security zone.",
+        "display-name": "deny instance_not_in_security_zone_move_to_compartment_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny instance_not_in_security_zone_move_to_compartment_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaah3k66efqfgo5ccjgvtkwbfpzj5yjajmw7vt5eub6ma4jp6su55zq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.623000+00:00",
+        "time-updated": "2025-11-13T03:21:24.624000+00:00"
+      },
+      {
+        "category": "Require Encryption",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Block volumes in a security zone must use a customer-managed master encryption key in the Vault service. They can't use the default encryption key managed by Oracle.",
+        "display-name": "deny block_volume_without_vault_key",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny block_volume_without_vault_key",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa7pgtjyod3pze6wuylgmts6ensywmeplabsxqq2bk4ighps4fqq4a",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "BLOCKSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.678000+00:00",
+        "time-updated": "2025-11-13T03:21:24.679000+00:00"
+      },
+      {
+        "category": "Require Encryption",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Boot volumes in a security zone must use a customer-managed master encryption key in the Vault service. They can't use the default encryption key managed by Oracle.",
+        "display-name": "deny boot_volume_without_vault_key",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny boot_volume_without_vault_key",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaxxs63ulmtcnxqmcvy6eaozh5jdtiaa2bk7wll5bbdsbnmmoczp5a",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "BLOCKSTORAGE",
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.724000+00:00",
+        "time-updated": "2025-11-13T03:21:24.725000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a block volume to a security zone if it's attached to a compute instance that isn't in the same security zone.",
+        "display-name": "deny attached_block_volume_not_in_security_zone_move_to_compartment_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny attached_block_volume_not_in_security_zone_move_to_compartment_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaqlpaf5tc3xfqdzdw2rtx7hk4ifywzml3eh3upspeh4s6x4epaskq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "BLOCKSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.778000+00:00",
+        "time-updated": "2025-11-13T03:21:24.779000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a boot volume to a security zone if it's attached to a compute instance that isn't in the same security zone.",
+        "display-name": "deny attached_boot_volume_not_in_security_zone_move_to_compartment_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny attached_boot_volume_not_in_security_zone_move_to_compartment_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaxou4266jlusvklor34czqvloa64k5dsok5cejug2bxi2jvqy32zq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "BLOCKSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.833000+00:00",
+        "time-updated": "2025-11-13T03:21:24.834000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a block volume in a security zone to a compartment that is not in the same security zone.",
+        "display-name": "deny block_volume_in_security_zone_move_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny block_volume_in_security_zone_move_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaajscm24dhll5wk65k6q4mmkopiykpqrumtururitjaxk3j4ibe3ua",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "BLOCKSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.878000+00:00",
+        "time-updated": "2025-11-13T03:21:24.879000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a boot volume in a security zone to a compartment that is not in the same security zone.",
+        "display-name": "deny boot_volume_in_security_zone_move_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny boot_volume_in_security_zone_move_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaol3pxbbikegih24c7l4um7wqeeun2dpkvgm3izz5syf755xfscgq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "BLOCKSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.922000+00:00",
+        "time-updated": "2025-11-13T03:21:24.923000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Subnets in a security zone can't be public. All subnets must be private.",
+        "display-name": "deny public_subnets",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny public_subnets",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaak5wxfr2r6kxmtd6bq6hqhyywfkj6pcnl74g3iui6qnlq7rof4ezq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:24.966000+00:00",
+        "time-updated": "2025-11-13T03:21:24.967000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't add an internet gateway to a VCN within the security zone.",
+        "display-name": "deny internet_gateway",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny internet_gateway",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaabs6kboflsfan2lihfnodhbeb75r4nxiolhlobvj6vqclx6j5yyha",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.011000+00:00",
+        "time-updated": "2025-11-13T03:21:25.012000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a subnet in a security zone to a compartment that is not in the same security zone.",
+        "display-name": "deny subnet_in_security_zone_move_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny subnet_in_security_zone_move_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaw6v2nz4unovq3joqk6pguxpaqriws2vzd7gvpldgai47tl72wseq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.058000+00:00",
+        "time-updated": "2025-11-13T03:21:25.059000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Object Storage buckets in a security zone can't be public.",
+        "display-name": "deny public_buckets",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny public_buckets",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa5ocyo7jqjzgjenvccch46buhpaaofplzxlp3xbxfcdwwk2tyrwqa",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "OBJECTSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.109000+00:00",
+        "time-updated": "2025-11-13T03:21:25.110000+00:00"
+      },
+      {
+        "category": "Require Encryption",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Object Storage buckets in a security zone must use a customer-managed master encryption key in the Vault service. They can't use the default encryption key managed by Oracle.",
+        "display-name": "deny buckets_without_vault_key",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny buckets_without_vault_key",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaqmq4jqcxqbjj5cjzb7t5ira66dctyypq2m2o4psxmx6atp45lyda",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "OBJECTSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.154000+00:00",
+        "time-updated": "2025-11-13T03:21:25.155000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a bucket  from a security zone to a standard compartment.",
+        "display-name": "deny bucket_in_security_zone_move_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny bucket_in_security_zone_move_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaawol5fz6qkrkxm5ui7n3car44e5wbs54thnku2hjxwaedi5ee6htq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "OBJECTSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.195000+00:00",
+        "time-updated": "2025-11-13T03:21:25.196000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Databases in a security zone can't be assigned to public subnets. They must use private subnets.",
+        "display-name": "deny db_instance_public_access",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny db_instance_public_access",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaauoi2xnbusvfd4yffdjaaazk64gndp4flumaw3r7vedwndqd6vmrq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.243000+00:00",
+        "time-updated": "2025-11-13T03:21:25.243000+00:00"
+      },
+      {
+        "category": "Ensure Data Durability",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Databases in a security zone must be configured to perform automatic backups. See Backing Up a Database to Oracle Cloud Infrastructure Object Storage.",
+        "display-name": "deny database_without_backup",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny database_without_backup",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaat5zxcpcy6vrl2xxcohi7o64vezhkwcp2ixbtreapdq4uowdu7nqq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.317000+00:00",
+        "time-updated": "2025-11-13T03:21:25.318000+00:00"
+      },
+      {
+        "category": "Ensure Data Security",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't use a database backup in a security zone to create a database that isn't in a security zone.",
+        "display-name": "deny database_not_in_security_zone_create_from_backup_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny database_not_in_security_zone_create_from_backup_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaepqj6x3jkkprubit2pudh6f3oyc3zyj2ycrmcox44duszghlo4iq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.368000+00:00",
+        "time-updated": "2025-11-13T03:21:25.369000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a database from a security zone to a standard compartment.",
+        "display-name": "deny db_instance_move_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny db_instance_move_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaegi6cweu5jqwipqhj5quz4pebfd76djed4lfogslzuawqavkrsjq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.414000+00:00",
+        "time-updated": "2025-11-13T03:21:25.415000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a database from a standard compartment to a security zone if its Data Guard association isn't in a security zone.",
+        "display-name": "deny database_with_dataguard_association_move_to_compartment_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny database_with_dataguard_association_move_to_compartment_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaarkvvuzwtc6xwwr57zg6fymgkco3lbt35c7r4lnahw4ab5i3vkbrq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.465000+00:00",
+        "time-updated": "2025-11-13T03:21:25.466000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "A database in a security zone can have a Data Guard association with another database (primary/standby) only if it's also in a security zone.",
+        "display-name": "deny dataguard_association_with_db_instances_not_in_security_zones",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny dataguard_association_with_db_instances_not_in_security_zones",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaapvmbf77sfr43sryhmdwoztbjck2h5fvsm5kyoc4zomfju6243oja",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.511000+00:00",
+        "time-updated": "2025-11-13T03:21:25.512000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "A database in a security zone must use subnets that are also in a security zone.",
+        "display-name": "deny db_instance_subnet_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny db_instance_subnet_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaazhmr3fyx6xwutuqpiddvfk3wqnj6kxxtiyohl3v47xzpcm77uwfa",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.556000+00:00",
+        "time-updated": "2025-11-13T03:21:25.558000+00:00"
+      },
+      {
+        "category": "Ensure Data Security",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't clone a database in a security zone to create a database that isn't in a security zone.",
+        "display-name": "deny database_in_security_zone_create_clone_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny database_in_security_zone_create_clone_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaby4h5ojgqrbtajfvtx2qu5yp3l2u4r6g3ai2nxw4bgywusm473xa",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.604000+00:00",
+        "time-updated": "2025-11-13T03:21:25.605000+00:00"
+      },
+      {
+        "category": "Use Only Configurations Approved by Oracle",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create an Always Free database in a security zone.",
+        "display-name": "deny free_database_creation",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny free_database_creation",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaav2jhoksnefigh7lqz7j2fnhxjphs7thgf6fhgfgzh45kksr77uzq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.652000+00:00",
+        "time-updated": "2025-11-13T03:21:25.653000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Exadata Infrastructure resources in a security zone can't be associated with Container Databases or VM clusters that aren't in security zones.",
+        "display-name": "deny db_resource_association_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny db_resource_association_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaakbmbc7p52m5ynbkb2mg2ogkelkpe5n5pty4qpavsegbbnoypys5q",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DATABASE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.696000+00:00",
+        "time-updated": "2025-11-13T03:21:25.697000+00:00"
+      },
+      {
+        "category": "Require Encryption",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "File systems in the security zone must use a customer-managed master encryption key in the Vault service. They can't use the default encryption key managed by Oracle.",
+        "display-name": "deny file_system_without_vault_key",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny file_system_without_vault_key",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaff6n52aojbgdg46jpm3kn7nizmh6iwvr7myez7svtfxsfs7irigq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.740000+00:00",
+        "time-updated": "2025-11-13T03:21:25.741000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a file system in the security zone to a compartment that is not in the same security zone.",
+        "display-name": "deny file_system_in_security_zone_move_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny file_system_in_security_zone_move_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaauhuzsidaju3mwy3llsetvm3dlc6ftel65ielfu7h4hg6q2cfsrxa",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.786000+00:00",
+        "time-updated": "2025-11-13T03:21:25.788000+00:00"
+      },
+      {
+        "category": "Restrict Resource Movement",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't move a mount target in the security zone to a compartment that is not in the same security zone.",
+        "display-name": "deny mount_target_in_security_zone_move_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny mount_target_in_security_zone_move_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaawec56szedvf6hogbbnu7cxywm4xkmta53wuo7lenceiqyr4bx5hq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.831000+00:00",
+        "time-updated": "2025-11-13T03:21:25.832000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "A mount target in the security zone can't use a subnet if it's not in the same security zone.",
+        "display-name": "deny mount_target_in_security_zone_create_with_subnet_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny mount_target_in_security_zone_create_with_subnet_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaao5qwdxigf7jfnstvzlexk4fnwojlnwidfdi3o25ublxop536qgmq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.879000+00:00",
+        "time-updated": "2025-11-13T03:21:25.880000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't export a file system in the security zone through a mount target that isn't in the same security zone.",
+        "display-name": "deny file_system_in_security_zone_export_via_mount_target_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny file_system_in_security_zone_export_via_mount_target_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaak2x2aomzhqoeg2bf4zgqyr3bg2ppsfhupn2xvu66zpuz7kbvae5a",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.923000+00:00",
+        "time-updated": "2025-11-13T03:21:25.924000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't export a file system through a mount target in a security zone if the file system isn't in the same security zone.",
+        "display-name": "deny file_system_not_in_security_zone_export_via_mount_target_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny file_system_not_in_security_zone_export_via_mount_target_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaauah5cz3vxzpdvw4uz32hcgcmhogvuhacgyc7z3al42tfjey46eea",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:25.989000+00:00",
+        "time-updated": "2025-11-13T03:21:25.990000+00:00"
+      },
+      {
+        "category": "Restrict Resource Association",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create a mount target that uses a subnet in a security zone if the mount target isn't in the same security zone.",
+        "display-name": "deny mount_target_not_in_security_zone_create_with_subnet_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny mount_target_not_in_security_zone_create_with_subnet_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaawebiliesbgzdguac5m5u332oj66afaab6ruovydpsdoexloguweq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.034000+00:00",
+        "time-updated": "2025-11-13T03:21:26.036000+00:00"
+      },
+      {
+        "category": "Ensure Data Security",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't clone a file system in the security zone to create a file system that isn't in the same security zone.",
+        "display-name": "deny file_system_in_security_zone_clone_to_compartment_not_in_security_zone",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny file_system_in_security_zone_clone_to_compartment_not_in_security_zone",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaadldlomr5moxliz3jyt4guuwoci72ysf3vplkpl4z22a46xtdhmfq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.086000+00:00",
+        "time-updated": "2025-11-13T03:21:26.087000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Load balancers in a security zone can't be public. All load balancers must be private.",
+        "display-name": "deny public_load_balancer",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny public_load_balancer",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa6j7b5bf3ytsno7a45r7xupqt2q342q2hlecnf7fgqpkq67stakda",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "LOADBALANCER"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.132000+00:00",
+        "time-updated": "2025-11-13T03:21:26.133000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't update local peering gateway in the security zone.",
+        "display-name": "deny update_local_peering_gateway",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny update_local_peering_gateway",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa7ld4u7j4c3tifkutsbxzgw4ija76irnjiy2c6egd5netnspcyayq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.174000+00:00",
+        "time-updated": "2025-11-13T03:21:26.174000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't update DHCP options in the security zone.",
+        "display-name": "deny update_DHCP_options",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny update_DHCP_options",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaariplufkx7shxnuezdjqbec2qsccylljtmirf5lit27r453zdmya",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.219000+00:00",
+        "time-updated": "2025-11-13T03:21:26.220000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't detach a volume in the security zone.",
+        "display-name": "deny detach_volume",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny detach_volume",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaabamsfe3vub657vidwwktmef6heqb7igof2p3n7mpmbkz7jj4cdca",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.266000+00:00",
+        "time-updated": "2025-11-13T03:21:26.267000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't delete certificate authority in the security zone.",
+        "display-name": "deny delete_certificate_authority",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny delete_certificate_authority",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaabpvrgbf7muzcqn7uw6ogfzsj2znogd25qxl7lwaxjubtqth7v3fq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "CERTIFICATESMANAGEMENT"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.310000+00:00",
+        "time-updated": "2025-11-13T03:21:26.311000+00:00"
+      },
+      {
+        "category": "Use Only Configurations Approved by Oracle",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't add a security rule to allow ingress specific ports and IP in the security zone.",
+        "display-name": "deny network_security_group_with_unsecure_ingress_rule",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny network_security_group_with_unsecure_ingress_rule",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaadpgsofr6omwprwahbfioklsoqlz32dia7gclaueu74omlgzhm6wq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.357000+00:00",
+        "time-updated": "2025-11-13T03:21:26.358000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't update network security group egress rules in the security zone.",
+        "display-name": "deny update_network_security_group_egress_rules",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny update_network_security_group_egress_rules",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaafcxvddsvpz6cljfnx5bqrbtrl2ygjs4ygevtd7bev7rc46mhqznq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.407000+00:00",
+        "time-updated": "2025-11-13T03:21:26.408000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't revoke a certificate authority version in the security zone.",
+        "display-name": "deny revoke_certificate_authority_version",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny revoke_certificate_authority_version",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaahjgtmrkbo3nqqcofflg7jqfjjgstp74wuaptmw7ej24ezm3ecoeq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "CERTIFICATESMANAGEMENT"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.452000+00:00",
+        "time-updated": "2025-11-13T03:21:26.453000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify a security list to allow traffic to a restricted port in the security zone.",
+        "display-name": "deny security_list_to_allow_traffic_to_restricted_port",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny security_list_to_allow_traffic_to_restricted_port",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaavn4zjk4e3fwslrk2nztvtvxgycb7sj2vyt4dyb6z3w5id6b6hada",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.497000+00:00",
+        "time-updated": "2025-11-13T03:21:26.498000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't delete a VCN in the security zone.",
+        "display-name": "deny delete_VCN",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny delete_VCN",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaavolswrbfqy6qn2qe7zek2dumml6pbmyzv47q6jfwdatrywmqumba",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.541000+00:00",
+        "time-updated": "2025-11-13T03:21:26.542000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't modify egress security rules of the VCN security list in the security zone.",
+        "display-name": "deny update_vcn_security_list_egress_rules",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny update_vcn_security_list_egress_rules",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaavqexukdqas4khzn2svgxz5v6tmqvmmizfokojgx7v56kgnou6xva",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.595000+00:00",
+        "time-updated": "2025-11-13T03:21:26.596000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't modify ingress security rules of the VCN security list in the security zone.",
+        "display-name": "deny update_vcn_security_list_ingress_rules",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny update_vcn_security_list_ingress_rules",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaax6rhbpt63cts54zdywhvqz3kb6wn4g5mdhr5nlg4jh2e5pluzk5a",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.645000+00:00",
+        "time-updated": "2025-11-13T03:21:26.646000+00:00"
+      },
+      {
+        "category": "Ensure Data Security",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify a listener with weak SSL communication for a load balancer.",
+        "display-name": "deny load_balancer_with_weak_SSL_communication",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny load_balancer_with_weak_SSL_communication",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaxo4mcvvp77zmr6mjqlv2akdyyfuetafnd3bvkxqsizzqxjfwwqtq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "LOADBALANCER"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.692000+00:00",
+        "time-updated": "2025-11-13T03:21:26.693000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't update a route table in the security zone.",
+        "display-name": "deny update_route_table",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny update_route_table",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaxwowk5jsfke343a22zg3h6h56ujillb2tbudzvyjok2bt7slsinq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.737000+00:00",
+        "time-updated": "2025-11-13T03:21:26.738000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't update network security group ingress rules in the security zone.",
+        "display-name": "deny update_network_security_group_ingress_rules",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny update_network_security_group_ingress_rules",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaayw3fxug322v5qabceor2wvha4jvkdt2d27ivumhjv6eiv7giw4iq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.796000+00:00",
+        "time-updated": "2025-11-13T03:21:26.798000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't delete VCN security list in the security zone.",
+        "display-name": "deny delete_vcn_security_list",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny delete_vcn_security_list",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaayxn5ccbavcx5w35uoozguju5zlovvtbnuvnrduxpdp3vsho33lba",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.840000+00:00",
+        "time-updated": "2025-11-13T03:21:26.841000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't delete a VCN network security group in the security zone.",
+        "display-name": "deny delete_network_security_group",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny delete_network_security_group",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaazlzn66zeazf5npw46qah3wlqpfrugv7w4tjbomit2msr43stidga",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.887000+00:00",
+        "time-updated": "2025-11-13T03:21:26.888000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Deny public network access in cloud shell.",
+        "display-name": "deny cloud_shell_public_network",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny cloud_shell_public_network",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaamewv6k5a7cik6ds6m6bsijwkiixpfzgsqzvrjlns5pxg6lslrzgq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "CLOUDSHELL"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.935000+00:00",
+        "time-updated": "2025-11-13T03:21:26.936000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify file storage resources in this security zone.",
+        "display-name": "deny manage_file_storage_resource",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_file_storage_resource",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa2w4jopmh3grz6ja52stz4tkru4h5dqj7wtfnppt6jdt2nnbxzgna",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "FILESTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:26.978000+00:00",
+        "time-updated": "2025-11-13T03:21:26.979000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify compute and block storage resources in the security zone.",
+        "display-name": "deny manage_compute_and_block_storage_resource",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_compute_and_block_storage_resource",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaazymh7mtysg6msddi3dao3qcmx6s3f644u3agicq2kfqpgchg7d2a",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE",
+          "COMPUTEMANAGEMENT",
+          "BLOCKSTORAGE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.025000+00:00",
+        "time-updated": "2025-11-13T03:21:27.027000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify bastion resources in the security zone.",
+        "display-name": "deny manage_DNS_resource",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_DNS_resource",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaafzjjxtyyps2nd2ubrbbpxx7estjmygevpiw2qjahqpn6xfvtsxjq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "DNS-CP"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.071000+00:00",
+        "time-updated": "2025-11-13T03:21:27.072000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify some virtual network resources in this security zone.",
+        "display-name": "deny manage_virtual_network_resource",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_virtual_network_resource",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaadqdgbpgctumooeukpo7z2y4ykhseyn75befwhit2roxvo2zvxwzq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK",
+          "VPN",
+          "VNCONFIGADVISOR",
+          "NATGATEWAY"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.110000+00:00",
+        "time-updated": "2025-11-13T03:21:27.111000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create a service gateway in the security zone.",
+        "display-name": "deny SGW_gateway",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny SGW_gateway",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa7tguf6alwlwkfmlbq3uamibechgyuccgi6xgzawczmczdgby24za",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "SERVICEGATEWAY"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.156000+00:00",
+        "time-updated": "2025-11-13T03:21:27.157000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't add a NAT gateway to a VCN within the security zone.",
+        "display-name": "deny NAT_gateway",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny NAT_gateway",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaafatd77cjshc4nfd3kktjaphgvo46bd5yrb7iwozarksf3e2555eq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "NATGATEWAY"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.203000+00:00",
+        "time-updated": "2025-11-13T03:21:27.203000+00:00"
+      },
+      {
+        "category": "Ensure Data Security",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create VCN security list in the security zone.",
+        "display-name": "deny create_vcn_security_list",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny create_vcn_security_list",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaarregcynoigbqvd6kxkyk4mr6yxjcsg4m2i3w54evidfh243hloq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.249000+00:00",
+        "time-updated": "2025-11-13T03:21:27.250000+00:00"
+      },
+      {
+        "category": "Ensure Data Security",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify VCN security list in the security zone.",
+        "display-name": "deny create_or_modify_vcn_security_list",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny create_or_modify_vcn_security_list",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaapsjw2rqmalc2wuxn6upnrmjzfbpm4vcxfgumsniblai3thrdowqq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.297000+00:00",
+        "time-updated": "2025-11-13T03:21:27.298000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't terminate an instance in the security zone.",
+        "display-name": "deny terminate_instance",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny terminate_instance",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaazhmxlmy42c5fljxrof2phaqrqw5vtar4vm5m6bq2t3d7uuchm6aq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.341000+00:00",
+        "time-updated": "2025-11-13T03:21:27.341000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't delete all load balancer backend sets in the security zone.",
+        "display-name": "deny delete_all_load_balancer_back_end_sets",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny delete_all_load_balancer_back_end_sets",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaawzax5b4z4l66yxcesbujzhkkt6g6fdjk5pkxz2r54mk7sq3ggvsa",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "LOADBALANCER"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.384000+00:00",
+        "time-updated": "2025-11-13T03:21:27.384000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify compute image resources in the security zone.",
+        "display-name": "deny manage_image_resource",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_image_resource",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaaocjyb5t3re2yuypgmzal4nzmxks2ttqvhhk2scm44j5rcj5y5olq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "COMPUTE-IMAGING"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.429000+00:00",
+        "time-updated": "2025-11-13T03:21:27.430000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't add a local peering gateway to a VCN in the security zone.",
+        "display-name": "deny LPG_gateway",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny LPG_gateway",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaanvmmvw2bll4zyaisxct4mi5fxsmw7ncgfclxxmgh3qtsq5mgumga",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.474000+00:00",
+        "time-updated": "2025-11-13T03:21:27.475000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "Limit management actions on VCN route tables",
+        "display-name": "deny manage_vcn_route_tables",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_vcn_route_tables",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaasgpn2k4appqwtenqxcrhkmjqjmms4c2vaz6vbmtoexlmw5vjagtq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.521000+00:00",
+        "time-updated": "2025-11-13T03:21:27.522000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify DHCP options in the security zone.",
+        "display-name": "deny manage_DHCP_options_resource",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_DHCP_options_resource",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaakom3aqo6kcwln37pxmgeloc2fujy6yhsgphc653xrgtfszze6siq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "VIRTUALNETWORK"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.560000+00:00",
+        "time-updated": "2025-11-13T03:21:27.561000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't modify OKE within the security zone.",
+        "display-name": "deny manage_oke_service",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_oke_service",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaang535pftyecak2f7u5n3lvgg3h42edmhlzyxxjfl5lqutnfvop4a",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "OKE"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.611000+00:00",
+        "time-updated": "2025-11-13T03:21:27.612000+00:00"
+      },
+      {
+        "category": "Restrict Resource Modification",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create or modify bastion resources in the security zone.",
+        "display-name": "deny manage_bastion_resource",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny manage_bastion_resource",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaauo2hrxrmfmjhtwtcac2ydwarczdlocfp5uy2nxccp62gbdhzpxoq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "BASTION-CP-API"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.658000+00:00",
+        "time-updated": "2025-11-13T03:21:27.659000+00:00"
+      },
+      {
+        "category": "Deny Public Access",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create a dynamic routing gateway in the security zone.",
+        "display-name": "deny DRG_gateway",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny DRG_gateway",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaa5a3pj7q4odot3sh5odlxlcezjqnh247qszwsy33swxkpfcc4rwwq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "NATGATEWAY"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.703000+00:00",
+        "time-updated": "2025-11-13T03:21:27.704000+00:00"
+      },
+      {
+        "category": "Ensure Data Security",
+        "compartment-id": null,
+        "defined-tags": {},
+        "description": "You can't create a dynamic routing gateway in the security zone.",
+        "display-name": "deny create_drg",
+        "freeform-tags": {
+          "Environment": "Production"
+        },
+        "friendly-name": "deny create_drg",
+        "id": "ocid1.securityzonessecuritypolicy.oc1..aaaaaaaar35m5kdym7ji4mw4klixigpy3s6cnznt66irzgld5xz7aaoyaiiq",
+        "lifecycle-details": null,
+        "lifecycle-state": "ACTIVE",
+        "owner": "ORACLE",
+        "services": [
+          "NATGATEWAY"
+        ],
+        "system-tags": null,
+        "time-created": "2025-11-13T03:21:27.747000+00:00",
+        "time-updated": "2025-11-13T03:21:27.748000+00:00"
+      }
+    ],
+    "locks": null,
+    "system-tags": null
+  }
+}
