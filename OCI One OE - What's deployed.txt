@@ -15,7 +15,6 @@ Observability
 -Service Connector
 
 Security
---------
 -Cloud Guard
 -Scanning
 -Security Zones (only applies CIS Level 1)
